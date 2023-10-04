@@ -1,0 +1,2 @@
+- Tailwind CSS for styling
+- Redux Toolkit for state management
