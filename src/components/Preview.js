@@ -12,6 +12,9 @@ const Preview = () => {
 
   return (
     <div>
+      <p className="bg-green-300 w-[48rem] text-center text-2xl m-auto p-8 mt-3">
+        Submit Successfully
+      </p>
       <div className="bg-gray-300 w-[48rem] m-auto p-8 mt-20">
         <p>Company Name: {jobListId[0]?.company?.display_name}</p>
         <p className="mt-5">Contract: {jobListId[0]?.contract_type}</p>
