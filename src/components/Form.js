@@ -17,7 +17,7 @@ const Form = ({jobId}) => {
   };
 
   return (
-    <div className="w-[48rem] m-auto text-center">
+    <div className="w-[48rem] m-auto text-center bg-gray-200 rounded-lg">
       <label>Name</label>
       <div>
         <input

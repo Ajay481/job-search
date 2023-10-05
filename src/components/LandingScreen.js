@@ -16,8 +16,8 @@ const LandingScreen = () => {
   };
 
   return (
-    <div>
-      <div className="bg-green-300 w-[48rem] m-auto text-center p-8 mt-48">
+    <div className="h-[100vh]">
+      <div className="bg-green-300 w-[48rem] m-auto text-center p-8 mt-24 rounded-lg">
         <p className="text-2xl font-bold">
           What programming language you're looking for a job ?
         </p>

@@ -12,23 +12,24 @@ const Preview = () => {
 
   return (
     <div>
-      <p className="bg-green-300 w-[48rem] text-center text-2xl m-auto p-8 mt-3">
+      <p className="text-green-400 bg-gray-50 border-b-8 w-[48rem] text-center text-3xl m-auto p-8 mt-3 rounded-lg font-bold">
         Submit Successfully
       </p>
-      <div className="bg-gray-300 w-[48rem] m-auto p-8 mt-20">
-        <p>Company Name: {jobListId[0]?.company?.display_name}</p>
-        <p className="mt-5">Contract: {jobListId[0]?.contract_type}</p>
-        <p className="mt-5">Description: {jobListId[0]?.description}</p>
+      <div className="border-b-8 bg-slate-50 w-[48rem] m-auto p-8 mt-20 rounded-lg">
+        <p className="text-2xl text-blue-500 font-bold">Company Name: {jobListId[0]?.company?.display_name}</p>
+        <p className="mt-5 text-2xl">Job Position: {jobListId[0]?.title}</p>
+        <p className="mt-5 text-xl">Contract: {jobListId[0]?.contract_type}</p>
+        <p className="font-bold text-2xl mt-5">About the job</p>
+        <p className="mt-3">{jobListId[0]?.description}</p>
         <p className="mt-5">
           Location: {jobListId[0]?.location?.area?.join(",")}
         </p>
-        <p className="mt-5">Job Position: {jobListId[0]?.title}</p>
-        <p className="mt-5">Salary: ₹{jobListId[0]?.salary_max}</p>
+        <p className="mt-5 text-gray-500">Salary: ₹{jobListId[0]?.salary_max}</p>
       </div>
-      <div className="bg-yellow-200 w-[48rem] m-auto p-8 mt-48">
-        <p>Name: {preview[0]?.name}</p>
-        <p>Email: {preview[0]?.email}</p>
-        <p>Cover Letter Note: {preview[0]?.cover}</p>
+      <div className="bg-slate-100 w-[48rem] m-auto p-8 mt-16 border-b-8 rounded-lg">
+        <p className="text-xl">Name: {preview[0]?.name}</p>
+        <p className="mt-5 text-xl">Email: {preview[0]?.email}</p>
+        <p className="mt-5 text-gray-500">Cover Letter Note: {preview[0]?.cover}</p>
         <button
           className="bg-orange-600 text-white mt-4 p-2 rounded-full font-bold w-[30%] h-12"
           onClick={() => navigate("/landing")}

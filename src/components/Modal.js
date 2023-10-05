@@ -12,7 +12,7 @@ const BackDrop = (props) => {
 
 const ModalOverlay = (props) => {
   return (
-    <div className="fixed top-[20%] left-[5%] w-[90%] bg-white p-4 border-r-4 z-30 shadow-slate-800 transition duration-300 ease-out">
+    <div className="fixed top-[20%] left-[25%] w-[50%] bg-gray-200 rounded-lg p-4 border-r-4 z-30  transition duration-300 ease-out">
       {props.children}
     </div>
   );

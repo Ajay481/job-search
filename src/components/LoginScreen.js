@@ -28,7 +28,7 @@ const LoginScreen = () => {
 
   return (
     <div className="w-[100vw]">
-      <div className="bg-blue-300 w-96 m-auto text-center p-8 mt-48">
+      <div className="bg-orange-300 w-96 m-auto text-center p-8 mt-48 rounded-lg">
         <label className="font-bold text-2xl">
           {isLogin ? "Login" : "Sign Up"}
         </label>
